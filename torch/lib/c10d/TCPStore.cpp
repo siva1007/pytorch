@@ -337,7 +337,6 @@ void TCPStoreDaemon::closeStopSignal() {
 }
 
 void TCPStoreDaemon::stop() {
-  run();
   if (controlPipeFd_[1] != -1) {
     // close the write end of the pipe
     ::close(controlPipeFd_[1]);

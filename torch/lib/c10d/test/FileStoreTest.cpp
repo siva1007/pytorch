@@ -70,7 +70,6 @@ void testGetSet(std::string path, std::string prefix = "") {
     // other store above.
     EXPECT_EQ(numKeys, 4);
   }
-
 }
 
 void stressTestStore(std::string path, std::string prefix = "") {
